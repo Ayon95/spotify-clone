@@ -56,3 +56,16 @@
 		font-size: 1.5rem;
 	}
 }
+
+// CATEGORIES SECTION
+.categories--premium {
+	background-color: rgb(241, 241, 241);
+	text-align: center;
+	padding: 8rem 2rem;
+
+	&__title {
+		color: $color-grey-dark;
+		font-size: 3.5rem;
+		line-height: 1.2;
+	}
+}
