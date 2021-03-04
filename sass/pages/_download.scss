@@ -1,0 +1,91 @@
+.download {
+	&__image-container {
+		margin-top: 7rem;
+		position: relative;
+		animation: moveInFromTop 1s ease-out;
+	}
+
+	&__laptop-image {
+		height: 13rem;
+		width: 13rem;
+	}
+
+	&__image-circle {
+		height: 3.5rem;
+		width: 3.5rem;
+		fill: $color-primary-light;
+		position: absolute;
+		top: 4.1rem;
+		left: 4.8rem;
+	}
+
+	&__icon-checkmark {
+		height: 1.2rem;
+		width: 1.2rem;
+		fill: $color-primary-light;
+		position: absolute;
+		top: 5.2rem;
+		left: 5.9rem;
+
+		animation: revealCheckmark 0.3s 1.5s ease-out backwards;
+	}
+}
+
+.h1--download {
+	animation: moveInFromLeft 1s ease-out;
+}
+
+.h4--download {
+	animation: moveInFromRight 1s ease-out;
+}
+
+.btn--black {
+	margin-top: 1.5rem;
+}
+
+// MOBILE MARKETING SECTION
+.mobile-marketing {
+	padding: 7rem 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+
+	&__link:not(:last-child) {
+		margin-right: 2rem;
+	}
+
+	&__badge {
+		height: 4rem;
+	}
+}
+
+// ALL-PLATFORMS SECTION
+.all-platforms {
+	background-color: $color-grey-dark;
+	padding: 7rem;
+	text-align: center;
+
+	&__icon {
+		fill: $color-primary-dark;
+		animation: showcaseIcons 7s backwards;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		gap: 2.5rem;
+		text-transform: uppercase;
+		font-size: 1.5rem;
+	}
+
+	&__link:link,
+	&__link:visited {
+		color: $color-primary;
+	}
+}
+
+.h2--all-platforms {
+	margin: 4.5rem 0;
+}

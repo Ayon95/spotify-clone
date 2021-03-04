@@ -1,0 +1,30 @@
+.hero {
+	height: calc(100vh + 8rem);
+	background-color: $color-secondary;
+	color: $color-primary;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative; // to position the circles
+	overflow: hidden;
+
+	&__heading {
+		margin-left: 22rem;
+	}
+}
+
+.h1--hero {
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+	text-indent: -29%;
+	animation: moveInFromLeft 1s ease-out;
+}
+
+.h4--hero {
+	margin-left: 2rem;
+	animation: moveInFromRight 1s ease-out;
+}
+
+.btn--green {
+	margin-left: 15rem;
+}

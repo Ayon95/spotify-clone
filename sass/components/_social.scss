@@ -1,0 +1,26 @@
+.social {
+	display: flex;
+	align-items: flex-start;
+	gap: 1rem;
+
+	&__circle {
+		height: 5rem;
+		width: 5rem;
+		border-radius: 50%;
+		background-color: $color-grey-dark;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+
+		&:hover .social__icon {
+			fill: $color-primary;
+		}
+	}
+
+	&__icon {
+		height: 2.5rem;
+		width: 2.5rem;
+		fill: #fff;
+	}
+}

@@ -1,0 +1,44 @@
+.circle {
+	position: absolute;
+	background-color: $color-primary;
+	border-radius: 50%;
+	box-shadow: 0 2rem 4rem rgba(black, 0.15);
+	transition: all 0.2s;
+
+	animation: revealCircles 1.5s;
+
+	&:hover {
+		transform: scale(1.05) translateY(-5px);
+	}
+
+	&--very-small {
+		height: 15rem;
+		width: 15rem;
+
+		bottom: -10rem;
+		right: 20vw;
+	}
+
+	&--small {
+		height: 30rem;
+		width: 30rem;
+		overflow: hidden;
+
+		left: -18rem;
+		top: 38.5rem;
+	}
+
+	&--medium {
+		height: 70rem;
+		width: 70rem;
+		right: -57rem;
+		top: -2rem;
+	}
+
+	&--large {
+		height: 100rem;
+		width: 100rem;
+		left: -48rem;
+		bottom: -77rem;
+	}
+}

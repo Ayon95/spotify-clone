@@ -1,0 +1,73 @@
+body {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	line-height: 1.7;
+	color: #fff;
+}
+
+h1,
+h2 {
+	letter-spacing: -0.5px;
+}
+
+.reg-trademark {
+	font-size: 7px;
+	font-weight: 200;
+}
+
+.h1--hero {
+	line-height: 1.2;
+	font-size: 13.5rem;
+	font-weight: 800;
+}
+
+.h1--support {
+	font-size: 6rem;
+}
+
+.h1--community,
+.h1--download {
+	line-height: 1;
+	font-size: 4.8rem;
+	color: $color-grey-dark;
+}
+
+.h1--premium {
+	font-size: 7.5rem;
+	line-height: 1.2;
+}
+
+.h2--download {
+	font-size: 3rem;
+	line-height: 1;
+	color: $color-grey-dark;
+}
+
+.h2--all-platforms {
+	@extend .h2--download;
+	color: #fff;
+}
+
+.h2--premium {
+	font-size: 3rem;
+	line-height: 1;
+}
+
+.h4--hero {
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+
+.h4--download {
+	font-size: 1.5rem;
+	color: $color-grey-dark;
+	font-weight: 600;
+}
+
+.h4--footer {
+	font-size: 1.3rem;
+	color: $color-grey;
+	text-transform: uppercase;
+	margin-top: 1.5rem;
+	margin-bottom: 2.2rem;
+}
