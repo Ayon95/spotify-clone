@@ -12,15 +12,6 @@
 	gap: 2rem;
 }
 
-.terms-conditions {
-	font-size: 1.1rem;
-
-	&__link {
-		color: #fff;
-		border-bottom: 1px solid #fff;
-	}
-}
-
 // BENEFITS SECTION
 
 .benefits {
@@ -60,12 +51,53 @@
 // CATEGORIES SECTION
 .categories--premium {
 	background-color: rgb(241, 241, 241);
-	text-align: center;
 	padding: 8rem 2rem;
 
 	&__title {
+		text-align: center;
 		color: $color-grey-dark;
 		font-size: 3.5rem;
-		line-height: 1.2;
+	}
+
+	&__container {
+		width: 110rem;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, max-content);
+		grid-auto-flow: column;
+		column-gap: 1.5rem;
+
+		& > * {
+			padding: 1.6rem;
+			background-color: #fff;
+		}
+
+		// select every fourth direct child
+		& > :nth-child(4n) {
+			border-radius: 0 0 1rem 1rem;
+		}
+	}
+
+	&__overview {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		color: $color-grey-dark;
+		border-radius: 1rem 1rem 0 0;
+	}
+
+	&__free {
+		color: #fff;
+		font-size: 1.4rem;
+		font-weight: 600;
+		padding: 4px 8px;
+		border-radius: 4px;
+		background-color: $color-secondary-light;
+	}
+
+	&__benefits {
+		color: $color-grey-dark;
 	}
 }

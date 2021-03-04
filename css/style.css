@@ -65,7 +65,8 @@ h2 {
 .h4--premium {
   font-size: 1.4rem;
   color: #222326;
-  font-weight: 600; }
+  font-weight: 600;
+  text-align: center; }
 
 .h4--hero {
   font-size: 1.7rem;
@@ -82,6 +83,19 @@ h2 {
   text-transform: uppercase;
   margin-top: 1.5rem;
   margin-bottom: 2.2rem; }
+
+.terms-conditions {
+  font-size: 1.1rem; }
+  .terms-conditions--white {
+    color: #fff; }
+  .terms-conditions--black {
+    color: #222326; }
+  .terms-conditions__link--white:link, .terms-conditions__link--white:visited {
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+  .terms-conditions__link--black:link, .terms-conditions__link--black:visited {
+    color: #222326;
+    border-bottom: 1px solid #222326; }
 
 .u-margin-bottom-small {
   margin-bottom: 2.5rem; }
@@ -591,12 +605,6 @@ h2 {
   display: flex;
   gap: 2rem; }
 
-.terms-conditions {
-  font-size: 1.1rem; }
-  .terms-conditions__link {
-    color: #fff;
-    border-bottom: 1px solid #fff; }
-
 .benefits {
   color: #222326;
   padding: 8rem 2rem 9rem 2rem;
@@ -622,9 +630,36 @@ h2 {
 
 .categories--premium {
   background-color: #f1f1f1;
-  text-align: center;
   padding: 8rem 2rem; }
   .categories--premium__title {
+    text-align: center;
     color: #222326;
-    font-size: 3.5rem;
-    line-height: 1.2; }
+    font-size: 3.5rem; }
+  .categories--premium__container {
+    width: 110rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, max-content);
+    grid-auto-flow: column;
+    column-gap: 1.5rem; }
+    .categories--premium__container > * {
+      padding: 1.6rem;
+      background-color: #fff; }
+    .categories--premium__container > :nth-child(4n) {
+      border-radius: 0 0 1rem 1rem; }
+  .categories--premium__overview {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #222326;
+    border-radius: 1rem 1rem 0 0; }
+  .categories--premium__free {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #1d75de; }
+  .categories--premium__benefits {
+    color: #222326; }
