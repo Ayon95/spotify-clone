@@ -47,7 +47,7 @@ h2 {
   color: #222326; }
 
 .h1--premium {
-  font-size: 7.5rem;
+  font-size: 6.5rem;
   line-height: 1.2; }
 
 .h2--download, .h2--all-platforms {
@@ -645,21 +645,45 @@ h2 {
     column-gap: 1.5rem; }
     .categories--premium__container > * {
       padding: 1.6rem;
-      background-color: #fff; }
-    .categories--premium__container > :nth-child(4n) {
-      border-radius: 0 0 1rem 1rem; }
+      background-color: #fff;
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1); }
   .categories--premium__overview {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: #222326;
-    border-radius: 1rem 1rem 0 0; }
+    border-radius: 1rem; }
   .categories--premium__free {
     color: #fff;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 600;
     padding: 4px 8px;
     border-radius: 4px;
+    margin-bottom: 1rem;
     background-color: #1d75de; }
+  .categories--premium__name {
+    font-size: 2rem; }
   .categories--premium__benefits {
-    color: #222326; }
+    color: #222326;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 2rem; }
+  .categories--premium__benefit {
+    display: flex;
+    gap: 1rem; }
+    .categories--premium__benefit:not(:last-child) {
+      margin-bottom: 1rem; }
+    .categories--premium__benefit::before {
+      content: '\2713';
+      font-size: 2.5rem;
+      position: relative;
+      top: -5px;
+      color: #2f4ac2; }
+  .categories--premium__button-container {
+    background-color: transparent;
+    text-align: center;
+    box-shadow: none; }
